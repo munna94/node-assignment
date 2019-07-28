@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-const uri = process.env.MONGO_QA_HOST;
+const uri = process.env.MONGO_HOST;
 
 mongoose.connect(uri, { useNewUrlParser: true }, function(err) {
   if (err) {
